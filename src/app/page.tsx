@@ -3,13 +3,12 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
 import SocialProof from "@/components/SocialProof";
-import SolutionTiers from "@/components/SolutionTiers";
 import Workflow from "@/components/Workflow";
 import QuickWins from "@/components/QuickWins";
 import CaseStudies from "@/components/CaseStudies";
 import Roadmap from "@/components/Roadmap";
 import FloatingCTA from "@/components/FloatingCTA";
-import ExpandingContactSection from "@/components/ExpandingContactSection";
+import FinalCTA from "@/components/FinalCTA";
 import SmoothScroll from "@/components/SmoothScroll";
 import { HeroBackground } from "@/components/HeroBackground";
 
@@ -83,15 +82,18 @@ export default function Page() {
   return (
     <SmoothScroll>
       <div id="top" className="scroll-smooth" suppressHydrationWarning>
-        <div hidden></div>
+        <div hidden suppressHydrationWarning></div>
         <div
           className="marketing-page min-h-screen relative overflow-hidden transition-colors duration-1000 ease-in-out"
           style={{ backgroundColor: bgColor, color: textColor }}
+          suppressHydrationWarning
         >
           {/* --- Top Right Header CTA Button --- */}
           <header className="fixed top-6 right-6 md:top-8 md:right-10 z-[70]">
             <a
-              href="https://www.aceintelligence.systems/contact"
+              href="https://forms.gle/ohQKBrH1FoY9nj5L6"
+              target="_blank"
+              rel="noreferrer"
               className="group relative inline-flex font-serif uppercase items-center justify-center cursor-pointer rounded-2xl transition-all duration-300 ease-in-out whitespace-nowrap h-12 md:h-13 px-6 md:px-8 bg-lime text-text hover:bg-lime/90 hover:scale-105 shadow-lg border border-text/10 text-base md:text-lg font-bold tracking-wide"
             >
               <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-red-500/30 via-yellow-400/40 to-amber-500/30 opacity-0 group-hover:opacity-100 blur-md transition-all duration-300 -z-10" />
@@ -126,7 +128,8 @@ export default function Page() {
                   transition={{ duration: 0.8, ease: "easeOut" }}
                   className="font-serif font-light text-center text-4xl sm:text-5xl md:text-6xl xl:text-7xl text-balance mb-6"
                 >
-                  We build websites that keep your business visible, relevant and impossible to overlook
+                  Real Estate Growth, Automated.
+From first inquiry to closed deal — AI handles the work, you handle the clients.
                 </motion.h1>
 
                 <motion.p
@@ -155,7 +158,9 @@ export default function Page() {
                       See How It Works
                     </a>
                     <a
-                      href="https://www.aceintelligence.systems/contact"
+                      href="https://forms.gle/ohQKBrH1FoY9nj5L6"
+                      target="_blank"
+                      rel="noreferrer"
                       className="w-full sm:w-auto inline-flex font-serif uppercase items-center justify-center text-center cursor-pointer rounded-2xl transition-all duration-300 ease-in-out py-5 px-8 sm:px-12 bg-white text-text hover:bg-white/90 border-2 border-text/15 hover:border-amber-400 hover:scale-105 shadow-xl text-lg sm:text-xl md:text-2xl font-extrabold tracking-wide leading-snug"
                     >
                       Start Your Customized Plan
@@ -169,9 +174,6 @@ export default function Page() {
             <div id="social-proof" data-section-bg="#eff3e7" data-section-text="#1c1b1d">
               <SocialProof />
             </div>
-            <div id="solution-tiers" data-section-bg="#eaf2df" data-section-text="#1c1b1d">
-              <SolutionTiers />
-            </div>
             <div id="workflow-section" data-section-bg="#e2efe0" data-section-text="#1c1b1d">
               <Workflow />
             </div>
@@ -182,12 +184,12 @@ export default function Page() {
               <CaseStudies />
             </div>
 
-            {/* --- Contact & Footer Section --- */}
-            <ExpandingContactSection />
+            {/* --- Final CTA & Footer Section --- */}
+            <FinalCTA />
           </main>
         </div>
 
-        <div aria-hidden="true" className="pointer-events-none fixed z-[60] hidden md:block" style={{ boxShadow: "0 0 0 9999px #f9fbfb", top: "32px", right: "32px", bottom: "32px", left: "32px", borderRadius: "24px" }}></div>
+        <div aria-hidden="true" className="pointer-events-none fixed z-[60] hidden md:block" style={{ boxShadow: "0 0 0 9999px #f9fbfb", top: "32px", right: "32px", bottom: "32px", left: "32px", borderRadius: "24px" }} suppressHydrationWarning></div>
         <FloatingCTA />
       </div>
     </SmoothScroll>

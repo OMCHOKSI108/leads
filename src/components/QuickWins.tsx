@@ -114,7 +114,7 @@ export default function QuickWins() {
             className="text-2xl text-center mb-6"
             style={{ fontFamily: '"Please Display", Georgia, serif', fontWeight: 800, color: "#1c1b1d" }}
           >
-            Before vs. After Automation
+            <br />Before vs. After Automation
           </h3>
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse">
@@ -127,14 +127,14 @@ export default function QuickWins() {
                     Metric
                   </th>
                   <th
-                    className="py-4 px-4 text-lg"
-                    style={{ fontFamily: "Figtree, Arial, sans-serif", fontWeight: 800, color: "#22292b" }}
+                    className="py-4 px-4 text-2xl"
+                    style={{ fontFamily: "Figtree, Arial, sans-serif", fontWeight: 900, color: "#22292b" }}
                   >
                     Before Automation
                   </th>
                   <th
-                    className="py-4 px-4 text-lg"
-                    style={{ fontFamily: "Figtree, Arial, sans-serif", fontWeight: 800, color: "#008138" }}
+                    className="py-4 px-4 text-2xl"
+                    style={{ fontFamily: "Figtree, Arial, sans-serif", fontWeight: 900, color: "#008138" }}
                   >
                     With AI Engine
                   </th>
