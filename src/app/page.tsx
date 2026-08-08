@@ -139,7 +139,7 @@ From first inquiry to closed deal — AI handles the work, you handle the client
                   transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                   className="font-sans text-center text-lg sm:text-xl md:text-2xl text-pretty max-w-3xl mx-auto mb-10 text-text/90"
                 >
-                  Automated lead capture, instant responses, intelligent follow-up. <strong className="font-semibold text-text">67% faster response times.</strong> <strong className="font-semibold text-text">52% more qualified leads.</strong>
+                  Automated lead capture, instant responses, intelligent follow-up. <strong className="font-semibold text-text">67% faster response times.</strong> <strong className="font-semibold text-text">72% more qualified leads.</strong>
                 </motion.p>
 
                 {/* Large Hero Action Card Container Box with Motion entrance */}
