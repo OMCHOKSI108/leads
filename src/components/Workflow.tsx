@@ -16,6 +16,8 @@ export default function Workflow() {
     { num: "08", title: "Calendar Link", desc: "Instant booking link sent to qualified lead", tag: "Booking", icon: "📅" },
     { num: "09", title: "Deal Pipeline", desc: "Deal created & assigned automatically", tag: "CRM", icon: "💼" },
     { num: "10", title: "Manager Dashboard", desc: "Real-time analytics and tracking", tag: "Visibility", icon: "📊" },
+    { num: "11", title: "AI Voice Agent", desc: "24/7 call handling with intelligent lead qualification", tag: "Calling", icon: "📞" },
+    { num: "12", title: "Social Media Optimization", desc: "Across Facebook, Instagram, etc.", tag: "Omnichannel", icon: "📱" },
   ];
 
   return (
